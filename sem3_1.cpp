@@ -1,4 +1,3 @@
-//Taska 1
 #include <iostream>
 #include <iomanip>
 using std::cin;
@@ -52,3 +51,4 @@ int main()
 	cout << "Result L = " << L << " N" << endl;
 	return 0;
 }
+
