@@ -41,7 +41,7 @@ int main()
 void init(double mass[], double wing_square[], double traction[], double Cd[], double Cl[], double& v, double& h)
 {
 
-	for (int i = 0; i <= 2; i++)//ìàññà
+	for (int i = 0; i <= 2; i++)//Ã¬Ã Ã±Ã±Ã 
 	{
 		cout << "Enter the mass of the aircraft " << i + 1 << " (kg): ";
 		cin >> mass[i];
@@ -55,7 +55,7 @@ void init(double mass[], double wing_square[], double traction[], double Cd[], d
 		cin.ignore(1000, '\n');
 	}
 
-	for (int i = 0; i <= 2; i++)//ïëîùàäü êðûëüåâ
+	for (int i = 0; i <= 2; i++)//Ã¯Ã«Ã®Ã¹Ã Ã¤Ã¼ ÃªÃ°Ã»Ã«Ã¼Ã¥Ã¢
 	{
 		cout << "Enter the wing square of the aircraft " << i + 1 << " (m^2): ";
 		cin >> wing_square[i];
@@ -69,7 +69,7 @@ void init(double mass[], double wing_square[], double traction[], double Cd[], d
 		cin.ignore(1000, '\n');
 	}
 
-	for (int i = 0; i <= 2; i++)//òÿãà
+	for (int i = 0; i <= 2; i++)//Ã²Ã¿Ã£Ã 
 	{
 		cout << "Enter the traction of the aircraft " << i + 1 << " (N): ";
 		cin >> traction[i];
