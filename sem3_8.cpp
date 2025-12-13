@@ -19,13 +19,13 @@ int main() {
 	cout << fixed << setprecision(2);
 	
 	int n;
-	cout << "Ââåäèòå ÷èñëî ñàìîë¸òîâ: ";
+	cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã·Ã¨Ã±Ã«Ã® Ã±Ã Ã¬Ã®Ã«Â¸Ã²Ã®Ã¢: ";
 	cin >> n;
 	while (n <= 0 || cin.fail())
 	{
 		cin.clear();
 		cin.ignore(1000, '\n');
-		cout << "Ââåäèòå öåëîå ïîëîæèòåëüíîå ÷èñëî: ";
+		cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¶Ã¥Ã«Ã®Ã¥ Ã¯Ã®Ã«Ã®Ã¦Ã¨Ã²Ã¥Ã«Ã¼Ã­Ã®Ã¥ Ã·Ã¨Ã±Ã«Ã®: ";
 		cin >> n;
 	}
 	cin.ignore(1000, '\n');
@@ -50,10 +50,10 @@ int main() {
 	}
 
 	cout << "\n" << string(40, '=') << endl;
-	cout << "ÐÅÇÓËÜÒÀÒÛ:" << endl;
+	cout << "ÃÃ…Ã‡Ã“Ã‹ÃœÃ’Ã€Ã’Ã›:" << endl;
 	cout << string(40, '=') << endl;
 	for (int i = 0; i < n; i++) {
-		cout << "Ñàìîëåò " << (i + 1) << ": " << parameters[i].t << " ñ" << endl;
+		cout << "Ã‘Ã Ã¬Ã®Ã«Ã¥Ã² " << (i + 1) << ": " << parameters[i].t << " Ã±" << endl;
 	}
 
 	delete[] parameters;
@@ -63,61 +63,61 @@ int main() {
 
 void init(Aircraft* parameters, int n)
 {
-	cout << "Ââåäèòå âûñîòó ïîë¸òà(ì): ";
+	cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¢Ã»Ã±Ã®Ã²Ã³ Ã¯Ã®Ã«Â¸Ã²Ã (Ã¬): ";
 	cin >> h;
 	while (h <= 0 || cin.fail())
 	{
 		cin.clear();
 		cin.ignore(1000, '\n');
-		cout << "Ââåäèòå ïîëîæèòåëüíîå ÷èñëî: ";
+		cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¯Ã®Ã«Ã®Ã¦Ã¨Ã²Ã¥Ã«Ã¼Ã­Ã®Ã¥ Ã·Ã¨Ã±Ã«Ã®: ";
 		cin >> h;
 	}
 	cin.ignore(1000, '\n');
 
 	for (int i = 0; i < n; i++)
 	{
-		cout << "\n=== Ñàìîëåò" << (i + 1) << " ===" << endl;
+		cout << "\n=== Ã‘Ã Ã¬Ã®Ã«Ã¥Ã²" << (i + 1) << " ===" << endl;
 
-		cout << "Ââåäèòå ìàññó ñàìîë¸òà(êã): ";
+		cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¬Ã Ã±Ã±Ã³ Ã±Ã Ã¬Ã®Ã«Â¸Ã²Ã (ÃªÃ£): ";
 		cin >> parameters[i].m;
 		while (parameters[i].m <= 0 || cin.fail())
 		{
 			cin.clear();
 			cin.ignore(1000, '\n');
-			cout << "Ââåäèòå ïîëîæèòåëüíîå ÷èñëî: ";
+			cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¯Ã®Ã«Ã®Ã¦Ã¨Ã²Ã¥Ã«Ã¼Ã­Ã®Ã¥ Ã·Ã¨Ã±Ã«Ã®: ";
 			cin >> parameters[i].m;
 		}
 		cin.ignore(1000, '\n');
 
-		cout << "Ââåäèòå ñèëó òÿãè ñàìîë¸òà(Í): ";
+		cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã±Ã¨Ã«Ã³ Ã²Ã¿Ã£Ã¨ Ã±Ã Ã¬Ã®Ã«Â¸Ã²Ã (Ã): ";
 		cin >> parameters[i].T;
 		while (parameters[i].T <= parameters[i].m*g || cin.fail())
 		{
 			cin.clear();
 			cin.ignore(1000, '\n');
-			cout << "Ââåäèòå ïîëîæèòåëüíîå ÷èñëî, áîëüøåå âåñà P = " << parameters[i].m * g<< "Í : ";
+			cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¯Ã®Ã«Ã®Ã¦Ã¨Ã²Ã¥Ã«Ã¼Ã­Ã®Ã¥ Ã·Ã¨Ã±Ã«Ã®, Ã¡Ã®Ã«Ã¼Ã¸Ã¥Ã¥ Ã¢Ã¥Ã±Ã  P = " << parameters[i].m * g<< "Ã : ";
 			cin >> parameters[i].T;
 		}
 		cin.ignore(1000, '\n');
 
-		cout << "Ââåäèòå êîýôôèöèåíò ïîú¸ìíîé ñèëû ñàìîë¸òà: ";
+		cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ ÃªÃ®Ã½Ã´Ã´Ã¨Ã¶Ã¨Ã¥Ã­Ã² Ã¯Ã®ÃºÂ¸Ã¬Ã­Ã®Ã© Ã±Ã¨Ã«Ã» Ã±Ã Ã¬Ã®Ã«Â¸Ã²Ã : ";
 		cin >> parameters[i].CL;
 		while (parameters[i].CL <= 0 || cin.fail())
 		{
 			cin.clear();
 			cin.ignore(1000, '\n');
-			cout << "Ââåäèòå ïîëîæèòåëüíîå ÷èñëî: ";
+			cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¯Ã®Ã«Ã®Ã¦Ã¨Ã²Ã¥Ã«Ã¼Ã­Ã®Ã¥ Ã·Ã¨Ã±Ã«Ã®: ";
 			cin >> parameters[i].CL;
 		}
 		cin.ignore(1000, '\n');
 
-		cout << "Ââåäèòå êîýôôèöèåíò ñîïðîòèâëåíèÿ ñàìîë¸òà: ";
+		cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ ÃªÃ®Ã½Ã´Ã´Ã¨Ã¶Ã¨Ã¥Ã­Ã² Ã±Ã®Ã¯Ã°Ã®Ã²Ã¨Ã¢Ã«Ã¥Ã­Ã¨Ã¿ Ã±Ã Ã¬Ã®Ã«Â¸Ã²Ã : ";
 		cin >> parameters[i].CD;
 		while (parameters[i].CD <= 0 || cin.fail())
 		{
 			cin.clear();
 			cin.ignore(1000, '\n');
-			cout << "Ââåäèòå ïîëîæèòåëüíîå ÷èñëî: ";
+			cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¯Ã®Ã«Ã®Ã¦Ã¨Ã²Ã¥Ã«Ã¼Ã­Ã®Ã¥ Ã·Ã¨Ã±Ã«Ã®: ";
 			cin >> parameters[i].CD;
 		}
 		cin.ignore(1000, '\n');
